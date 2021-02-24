@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "CIDCSV",
+  "version": "0.1",
+  "description": "Disclaimer: This sample scripts is not supported under any CrowdStrike standard support program or service. This sample script is provided AS IS without warranty of any kind. CrowdStrike further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall CrowdStrike, its authors, or anyone else involved in the creation, production, or delivery of the script/s be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if CrowdStrike has been advised of the possibility of such damages.",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.crowdstrike.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
